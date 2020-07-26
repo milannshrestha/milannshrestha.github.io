@@ -14,25 +14,26 @@
       <div class="container">
         <h1>
           введите флаг
-          <br><br>
+          <br>
         </h1>
             <input type="text" id="myText" size="30" value="">
         <h2>
-          <button onclick="myFunction()">Отправить</button>
-          <br><br>
+          <button onclick="myFunction(); this.onclick=null;">Отправить</button>
+          <br>
           <p id="demo"></p>
           <script>
           function myFunction() {
+            console.log("flag");
             var x, text;
               var x = document.getElementById("myText").value;
               
-            if (x == 'flag{my_secret_key}'){
-              text = "Congrats! You made it! :D";
+            if (x == 'flag{flag_submission_test}'){
+              text = alert("Correct Flag! :D");
               }
             else{
-              text = "Lol! No!!"
+              text = alert("Somethings wrong");
             }  
-            document.getElementById("demo").innerHTML = text;
+         <small>document.getElementById("demo").innerHTML = "You finish your submission quota";</small>
           }
           </script>
         </h2>
