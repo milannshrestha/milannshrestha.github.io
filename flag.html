@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>歡迎使用@milannshrestga捕獲標誌</h3>
+
+<input type="text" id="myText" value="">
+
+<p>在這裡提交標誌</p>
+
+<button onclick="myFunction()">提交</button>
+
+<p id="demo"></p>
+<script>
+function myFunction() {
+	var x, text;
+    var x = document.getElementById("myText").value;
+    
+  if (x == 'flag{hello_mello}'){
+  	text = "correct flag! :D";
+    }
+  else{
+  	text = "Try again!"
+  }  
+  document.getElementById("demo").innerHTML = text;
+}
+</script>
+</body>
+</html>
+
+
